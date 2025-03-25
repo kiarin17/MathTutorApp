@@ -15,7 +15,7 @@
     <VBox styleClass="form-container" spacing="10" alignment="TOP_LEFT" prefHeight="300" maxHeight="300">
     <Label styleClass="title" text="Здравствуй, Юлия!"/>
 
-    <!-- Поля формы -->
+
 
         <Label text="Логин:" styleClass="label-text"/>
         <TextField fx:id="log" styleClass="input-field" promptText="Введите логин"/>
@@ -24,7 +24,6 @@
         <PasswordField fx:id="password" styleClass="input-field" promptText="Введите пароль"/>
 
 
-    <!-- Кнопка -->
     <Button fx:id="signIn" styleClass="login-button" text="Войти" onAction="#handleSignIn"/>
         <Label fx:id="errorLabel" style="-fx-text-fill: red;" visible="false"/>
     </VBox>
