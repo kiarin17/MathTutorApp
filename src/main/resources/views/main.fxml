@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<HBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mathtutor.controller.LoginController"
+      stylesheets="@/styles.css"
+      spacing="20"
+      alignment="CENTER">
+
+    <VBox styleClass="form-container" spacing="10" alignment="TOP_LEFT" prefHeight="300" maxHeight="300">
+    <Label styleClass="title" text="Здравствуй, Юлия!"/>
+
+    <!-- Поля формы -->
+
+        <Label text="Логин:" styleClass="label-text"/>
+        <TextField fx:id="log" styleClass="input-field" promptText="Введите логин"/>
+
+        <Label text="Пароль:" styleClass="label-text"/>
+        <PasswordField fx:id="password" styleClass="input-field" promptText="Введите пароль"/>
+
+
+    <!-- Кнопка -->
+    <Button fx:id="signIn" styleClass="login-button" text="Войти" onAction="#handleSignIn"/>
+        <Label fx:id="errorLabel" style="-fx-text-fill: red;" visible="false"/>
+    </VBox>
+
+    <ImageView fitWidth="550" preserveRatio="true">
+        <image>
+            <Image url="@/images/Julic.png"/>
+        </image>
+    </ImageView>
+
+</HBox>
