@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mathtutor.controller.PaymentsController"
+      spacing="20"
+      style="-fx-padding: 30;">
 
-</AnchorPane>
+    <Label text="Платежи" style="-fx-font-size: 24; -fx-font-weight: bold;" />
+
+    <HBox spacing="20">
+        <!-- Оплатили -->
+        <VBox spacing="10" style="-fx-background-color: #e0ffe0; -fx-padding: 10;" prefWidth="250">
+            <Label text="Оплатили" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+            <ListView fx:id="paidListView" />
+        </VBox>
+
+        <!-- Не оплатили -->
+        <VBox spacing="10" style="-fx-background-color: #ffe0e0; -fx-padding: 10;" prefWidth="250">
+            <Label text="Не оплатили" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+            <ListView fx:id="unpaidListView" />
+        </VBox>
+    </HBox>
+
+</VBox>

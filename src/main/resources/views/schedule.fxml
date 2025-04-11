@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" spacing="20" style="-fx-padding: 30;">
+    <!-- Заголовок страницы -->
+    <Label text="Расписание" style="-fx-font-size: 24; -fx-font-weight: bold;" alignment="CENTER"/>
 
-</AnchorPane>
+    <!-- DatePicker для выбора даты (календарь) -->
+    <DatePicker fx:id="datePicker" style="-fx-font-size: 14;" prefWidth="200"/>
+
+    <!-- Текстовое поле для ввода имени ученика -->
+    <TextField fx:id="studentNameField" promptText="Введите имя ученика" style="-fx-font-size: 14;" prefWidth="200"/>
+
+    <!-- Кнопка для добавления записи -->
+    <Button fx:id="addButton" text="Добавить запись" style="-fx-font-size: 14;" prefWidth="200"/>
+
+    <!-- Список для отображения записей на выбранную дату -->
+    <ListView fx:id="listView" style="-fx-font-size: 14;" prefHeight="200" prefWidth="300"/>
+</VBox>

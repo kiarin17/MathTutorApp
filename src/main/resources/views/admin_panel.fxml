@@ -1,14 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
 
-<VBox xmlns="http://javafx.com/javafx/17"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.mathtutor.controller.AdminPanelController"
-      spacing="20"
-      alignment="CENTER"
-      style="-fx-padding: 30;">
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mathtutor.controller.AdminPanelController"
+            stylesheets="@/admin_styles.css">
 
-    <Label text="Админ-панель" style="-fx-font-size: 24; -fx-font-weight: bold;"/>
-    <Button text="Выход" onAction="#handleLogout"/>
-</VBox>
+    <!-- Верхняя панель -->
+    <top>
+        <HBox  alignment="CENTER_LEFT">
+            <Label text="Основная панель"
+                   style="-fx-text-fill: black; -fx-font-size: 24; -fx-padding: 0 0 0 10; -fx-font-family: Anonymous Pro;" />
+            <Label text="МОНИТОРИНГА"
+                   style="-fx-text-fill: black; -fx-font-size: 36; -fx-padding: 0 0 0 10; -fx-font-family: Inter; -fx-font-weight: bold;" />
+        </HBox>
+    </top>
+
+    <!-- Левая панель меню -->
+    <left>
+        <VBox fx:id="navPanel"
+              styleClass="nav-panel"
+              spacing="10"
+              onMouseEntered="#expandMenu"
+              onMouseExited="#collapseMenu">
+
+            <!-- Аватар -->
+            <HBox alignment="CENTER_LEFT" spacing="10" styleClass="nav-panel">
+                <ImageView fitHeight="48" fitWidth="48" preserveRatio="true">
+                    <Image url="@/images/avatar.jpg" />
+                </ImageView>
+                <Label fx:id="usernameLabel" text="Юлия" styleClass="menu-label" />
+            </HBox>
+
+            <!-- Кнопки навигации -->
+            <VBox fx:id="navButtons" spacing="10" styleClass="nav-item" >
+                <Button text="Главная" styleClass="nav-item" onAction="#showMain">
+                    <graphic>
+                        <ImageView styleClass="icon" fitWidth="32" fitHeight="32">
+                            <Image url="@/images/main.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button text="Ученики" styleClass="nav-item" onAction="#showStudents">
+                    <graphic>
+                        <ImageView styleClass="icon" fitWidth="32" fitHeight="32">
+                            <Image url="@/images/people.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button text="Расписание" styleClass="nav-item" onAction="#showSchedule">
+                    <graphic>
+                        <ImageView styleClass="icon" fitWidth="32" fitHeight="32">
+                            <Image url="@/images/calendare.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button text="Платежи" styleClass="nav-item" onAction="#showPayments">
+                    <graphic>
+                        <ImageView styleClass="icon" fitWidth="32" fitHeight="32">
+                            <Image url="@/images/money.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button text="Настройки" styleClass="nav-item" onAction="#showSettings">
+                    <graphic>
+                        <ImageView styleClass="icon" fitWidth="32" fitHeight="32">
+                            <Image url="@/images/setting.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </VBox>
+
+            <!-- Кнопка выхода -->
+            <Button text="Выход" onAction="#handleLogout" styleClass="nav-item">
+                <graphic>
+                    <ImageView styleClass="icon" fitWidth="32" fitHeight="32">
+                        <Image url="@/images/logout.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </VBox>
+    </left>
+
+    <!-- Центр с контентом -->
+    <center>
+        <StackPane fx:id="contentArea" style="-fx-background-color: #ecf0f1;">
+            <Label text="Выберите раздел" style="-fx-font-size: 16;" />
+        </StackPane>
+    </center>
+</BorderPane>

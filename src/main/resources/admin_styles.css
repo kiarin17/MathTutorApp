@@ -1,0 +1,71 @@
+/* Общая панель навигации */
+.nav-panel {
+    -fx-background-color: #EB7C2D;
+    -fx-padding: 10;
+    -fx-pref-width: 72;
+    -fx-background-radius: 0 40 40 0;
+    -fx-alignment: CENTER;
+    -fx-spacing: 10;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Расширение меню при наведении */
+.nav-panel:hover {
+    -fx-pref-width: 220;
+    -fx-background-radius: 0 20 20 0;
+}
+
+/* Элементы меню */
+.nav-item {
+    -fx-padding: 10;
+    -fx-background-radius: 20;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 10;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease-in-out;
+    -fx-font-size: 20;
+    -fx-background-color: transparent;  /* Убираем фон для неактивных кнопок */
+}
+
+/* Подсветка при наведении */
+.nav-item:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Активная страница */
+.nav-item.active {
+    -fx-background-color: white;
+    -fx-text-fill: #EB7C2D;
+}
+
+/* Иконка */
+.nav-item ImageView {
+    -fx-opacity: 1;
+}
+
+/* Надпись */
+.menu-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-opacity: 0;
+    -fx-translate-x: -10;
+    -fx-max-width: 0;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Отображение надписи при наведении */
+.nav-panel:hover .menu-label {
+    -fx-opacity: 1;
+    -fx-translate-x: 0;
+    -fx-max-width: 200;
+    -fx-padding: 0 0 0 10;
+}
+
+/* Кнопка выхода */
+.logout {
+    -fx-background-color: transparent;
+}
+
+.logout:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,25 @@
+
+.tab-item {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-text-fill: black;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+
+/* Активная вкладка */
+.tab-item:selected {
+    -fx-text-fill: #FF7F00;
+    -fx-border-color: #FF7F00;
+    -fx-border-width: 2;
+}
+
+
+.tab-item:selected:focused {
+    -fx-border-color: transparent;
+}
