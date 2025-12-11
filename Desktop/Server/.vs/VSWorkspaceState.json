@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\RestaurantSystemAPI",
+    "\\RestaurantSystemAPI\\RestaurantSystemAPI",
+    "\\RestaurantSystemAPI\\RestaurantSystemAPI\\Services"
+  ],
+  "SelectedNode": "\\RestaurantSystemAPI\\RestaurantSystemAPI\\Services\\JwtService.cs",
+  "PreviewInSolutionExplorer": false
+}

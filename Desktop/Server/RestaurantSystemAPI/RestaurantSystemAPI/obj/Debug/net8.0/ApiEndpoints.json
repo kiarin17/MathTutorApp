@@ -1,0 +1,1064 @@
+[
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "GetAvailableCouriers",
+    "RelativePath": "api/Admin/couriers/available",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "GetDashboardStats",
+    "RelativePath": "api/Admin/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "GetAllOrders",
+    "RelativePath": "api/Admin/orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "DeleteOrder",
+    "RelativePath": "api/Admin/orders/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "AssignCourierToOrder",
+    "RelativePath": "api/Admin/orders/{id}/assign-courier",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.AssignCourierRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "UpdateOrderStatus",
+    "RelativePath": "api/Admin/orders/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.OrderStatusUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Admin/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "CreateUser",
+    "RelativePath": "api/Admin/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.CreateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Admin/users/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AdminController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Admin/users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Auth/change-password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.ChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "CheckAdmin",
+    "RelativePath": "api/Auth/check-admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "UpdateCourierAvailability",
+    "RelativePath": "api/Auth/courier/availability",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateAvailabilityRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "GetCouriers",
+    "RelativePath": "api/Auth/couriers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "FixAdminRole",
+    "RelativePath": "api/Auth/fix-admin-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/Auth/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Auth/profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "RegisterAdmin",
+    "RelativePath": "api/Auth/register-admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "RegisterCourier",
+    "RelativePath": "api/Auth/register-courier",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.RegisterCourierRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "UpdateUserRole",
+    "RelativePath": "api/Auth/update-role/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateRoleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.AuthController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Auth/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ClientOrdersController",
+    "Method": "GetOrder",
+    "RelativePath": "api/client/ClientOrders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ClientOrdersController",
+    "Method": "CancelOrder",
+    "RelativePath": "api/client/ClientOrders/{id}/cancel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ClientOrdersController",
+    "Method": "ProcessPayment",
+    "RelativePath": "api/client/ClientOrders/{id}/process-payment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RestaurantSystemAPI.Models.DTOs.Orders.ProcessPaymentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ClientOrdersController",
+    "Method": "GetStatusHistory",
+    "RelativePath": "api/client/ClientOrders/{id}/status-history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ClientOrdersController",
+    "Method": "CreateOrder",
+    "RelativePath": "api/client/ClientOrders/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RestaurantSystemAPI.Models.DTOs.Orders.CreateOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ClientOrdersController",
+    "Method": "GetMyOrders",
+    "RelativePath": "api/client/ClientOrders/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.CourierController",
+    "Method": "UpdateAvailability",
+    "RelativePath": "api/Courier/availability",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateAvailabilityRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.CourierController",
+    "Method": "GetAvailableOrders",
+    "RelativePath": "api/Courier/available-orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.CourierController",
+    "Method": "CompleteDelivery",
+    "RelativePath": "api/Courier/complete-delivery/{orderId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.CourierController",
+    "Method": "GetCourierDashboard",
+    "RelativePath": "api/Courier/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.CourierController",
+    "Method": "GetEarnings",
+    "RelativePath": "api/Courier/earnings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.CourierController",
+    "Method": "GetCourierOrders",
+    "RelativePath": "api/Courier/orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.CourierController",
+    "Method": "StartDelivery",
+    "RelativePath": "api/Courier/start-delivery/{orderId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.CourierController",
+    "Method": "TakeOrder",
+    "RelativePath": "api/Courier/take-order/{orderId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "GetAllItemsForAdmin",
+    "RelativePath": "api/Menu/all-items",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "GetCategories",
+    "RelativePath": "api/Menu/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/Menu/categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.CreateCategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/Menu/categories/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateCategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Menu/categories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "GetMenuItems",
+    "RelativePath": "api/Menu/items",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "CreateMenuItem",
+    "RelativePath": "api/Menu/items",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.CreateMenuItemRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "GetMenuItem",
+    "RelativePath": "api/Menu/items/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "UpdateMenuItem",
+    "RelativePath": "api/Menu/items/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateMenuItemRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "DeleteMenuItem",
+    "RelativePath": "api/Menu/items/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "RestoreMenuItem",
+    "RelativePath": "api/Menu/items/{id}/restore",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "TogglePopular",
+    "RelativePath": "api/Menu/items/{id}/toggle-popular",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "GetItemsByCategory",
+    "RelativePath": "api/Menu/items/by-category/{categoryId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.MenuController",
+    "Method": "GetPopularItems",
+    "RelativePath": "api/Menu/popular-items",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.OrdersController",
+    "Method": "GetOrders",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.OrdersController",
+    "Method": "CreateOrder",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.CreateOrderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.OrdersController",
+    "Method": "GetOrder",
+    "RelativePath": "api/Orders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.OrdersController",
+    "Method": "UpdateOrderStatus",
+    "RelativePath": "api/Orders/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.OrdersController",
+    "Method": "GetCourierOrders",
+    "RelativePath": "api/Orders/courier/{courierId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courierId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.OrdersController",
+    "Method": "GetUserOrders",
+    "RelativePath": "api/Orders/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ReservationsController",
+    "Method": "GetReservations",
+    "RelativePath": "api/Reservations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ReservationsController",
+    "Method": "CreateReservation",
+    "RelativePath": "api/Reservations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.CreateReservationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ReservationsController",
+    "Method": "GetReservation",
+    "RelativePath": "api/Reservations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ReservationsController",
+    "Method": "UpdateReservation",
+    "RelativePath": "api/Reservations/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateReservationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ReservationsController",
+    "Method": "DeleteReservation",
+    "RelativePath": "api/Reservations/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ReservationsController",
+    "Method": "UpdateReservationStatus",
+    "RelativePath": "api/Reservations/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RestaurantSystemAPI.Controllers.UpdateReservationStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ReservationsController",
+    "Method": "GetAvailableTimes",
+    "RelativePath": "api/Reservations/available-times",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "guests",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ReservationsController",
+    "Method": "GetReservationStats",
+    "RelativePath": "api/Reservations/stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.ReservationsController",
+    "Method": "GetUserReservations",
+    "RelativePath": "api/Reservations/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.SeedController",
+    "Method": "AddTestData",
+    "RelativePath": "api/Seed/test-data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.SeedController",
+    "Method": "AddTestUsers",
+    "RelativePath": "api/Seed/test-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.TestController",
+    "Method": "TestDatabase",
+    "RelativePath": "api/Test/database",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.TestController",
+    "Method": "Hello",
+    "RelativePath": "api/Test/hello",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantSystemAPI.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RestaurantSystemAPI.WeatherForecast, RestaurantSystemAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
